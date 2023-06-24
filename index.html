@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" class="rel">
+</head>
+<body>
+    <nav>
+        <ul>
+            <div class="navLeft">
+                <li><a href="#">Header</a></li>
+            </div>
+            <div class="navRight">
+                <li><a href="index.html">SignUp</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </div>
+        </ul>
+    </nav>
+    <hr>
+    <form method="post">
+        <h1>Signup</h1>
+        <input type="text" placeholder="Full Name" name="name" id="name" >
+        <input type="email" placeholder="Email" name="email" id="email" >
+        <input type="password" placeholder="Password" name="password" id="password" onChange="onChange()">
+        <input type="password" placeholder="Confirm Password" name="confirm" id="confirm" onChange="onChange()">
+        <p id="message"></p>
+        <button value="submit" id="submit" onclick="saveData()" disabled>Signup</button>
+    </form>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
